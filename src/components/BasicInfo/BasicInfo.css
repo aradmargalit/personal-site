@@ -1,0 +1,16 @@
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.headshot {
+  width: 100%;
+}
+
+.icons path {
+  color: gray;
+}
+
+.btn {
+  margin-left: 10px;
+}
