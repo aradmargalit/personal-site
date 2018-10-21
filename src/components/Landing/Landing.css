@@ -1,0 +1,16 @@
+.short-bio {
+  text-align: right;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.headshot {
+  height: 300px;
+}
+
+.icons img {
+  height: 30px;
+}
