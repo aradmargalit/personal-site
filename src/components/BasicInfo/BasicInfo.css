@@ -11,6 +11,6 @@
   height: 300px;
 }
 
-.icons img {
-  height: 30px;
+.icons path {
+  color: gray;
 }

@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './BasicInfo.css';
 import arad_image from './arado.png';
-import email from '../../icons/envelope-open.svg';
-import code from '../../icons/code.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class BasicInfo extends Component {
   render() {
@@ -29,10 +28,10 @@ class BasicInfo extends Component {
         <br />
         <Row className="icons">
           <Col xs="3">
-            <img src={email} alt="thing" />
+            <FontAwesomeIcon icon="envelope" />
           </Col>
           <Col xs="3">
-            <img src={code} alt="thing" />
+            <FontAwesomeIcon icon="code-branch" />
           </Col>
         </Row>
       </Container>
