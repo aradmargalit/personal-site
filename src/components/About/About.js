@@ -12,15 +12,17 @@ import {
   Col,
 } from 'reactstrap';
 import './About.css';
+import arad_bike from './arad_bike.jpg';
 
 export default class About extends Component {
   render() {
     return (
       <Container>
         <br />
+        <h3>Arad Margalit</h3>
         <Row>
           <Col xs="12" lg="4" className="blurb">
-            <h3>Arad Margalit</h3>
+            <img src={arad_bike} alt="self portrait" />
             <p>
               British shorthair bengal Tomcat ocicat Grimalkin. Sphynx mouser
               siamese. Himalayan ocicat or manx. Tiger cheetah or tomcat
@@ -40,7 +42,7 @@ export default class About extends Component {
               birman donskoy.
             </p>
           </Col>
-          <Col xs="12" lg="8">
+          <Col xs="12" lg={{ size: 7, offset: 1 }}>
             <CardDeck>
               <Card>
                 <CardImg
