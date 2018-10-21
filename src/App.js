@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import Landing from './components/Landing/Landing';
 import './App.css';
-import MenuBar from './components/MenuBar/MenuBar';
-import Footer from './components/Footer/Footer';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Landing from './components/Landing/Landing';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <MenuBar />
-        <Landing />
-        <Footer />
-      </div>
+      <Router>
+        <div className="App">
+          <Route exact path="/" component={Landing} />
+        </div>
+      </Router>
     );
   }
 }
