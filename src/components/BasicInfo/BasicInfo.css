@@ -1,0 +1,12 @@
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.headshot {
+  height: 300px;
+}
+
+.icons path {
+  color: gray;
+}
