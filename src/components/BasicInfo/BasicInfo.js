@@ -9,14 +9,14 @@ class BasicInfo extends Component {
     return (
       <Container>
         <Row className="vertical-align">
-          <Col xs="4">
+          <Col xs="12" lg="4">
             <img
               src={arad_image}
               className="rounded-circle headshot"
               alt="Arad"
             />
           </Col>
-          <Col xs="8" className="short-bio align-middle">
+          <Col xs="12" lg="8" className="short-bio align-middle">
             <div className="align-middle">
               <h1>Arad Margalit</h1>
               <h5>Software Developer at Hulu</h5>
