@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
 import {
   Collapse,
   Navbar,
@@ -28,16 +28,16 @@ class MenuBar extends Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <Link to="/">
+          <LinkContainer to="/">
             <NavbarBrand>Arad Margalit</NavbarBrand>
-          </Link>
+          </LinkContainer>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to="/about-me">
+                <LinkContainer to="/about-me">
                   <NavLink>About Me</NavLink>
-                </Link>
+                </LinkContainer>
               </NavItem>
               <NavItem>
                 <NavLink href="/resume/">Resume</NavLink>
