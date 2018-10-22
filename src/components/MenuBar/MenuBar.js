@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
+import honk_image from './honk64.png';
+import './MenuBar.css';
 import {
   Collapse,
   Navbar,
@@ -29,7 +31,10 @@ class MenuBar extends Component {
       <div>
         <Navbar color="light" light expand="md">
           <LinkContainer to="/">
-            <NavbarBrand>Arad Margalit</NavbarBrand>
+            <NavbarBrand>
+              <img className="logo" src={honk_image} alt="logo" />
+              Arad Margalit
+            </NavbarBrand>
           </LinkContainer>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
