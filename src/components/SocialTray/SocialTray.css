@@ -1,0 +1,7 @@
+path {
+  color: black;
+}
+
+a:hover path {
+  color: #428bca;
+}

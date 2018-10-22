@@ -7,7 +7,7 @@ export default class Landing extends Component {
     return (
       <Fragment>
         <BasicInfo />
-        <hr />
+        <br /> <br />
         <Skills />
       </Fragment>
     );
