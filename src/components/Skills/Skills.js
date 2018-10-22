@@ -4,32 +4,32 @@ var _ = require('lodash');
 
 const skills = [
   {
-    skill: 'Python',
+    name: 'Python',
     prof: 100,
     comments: 'My main language at Hulu',
   },
   {
-    skill: 'Ruby',
+    name: 'Ruby',
     prof: 100,
     comments: '',
   },
   {
-    skill: 'React',
+    name: 'React',
     prof: 75,
     comments: 'I created this site with it!',
   },
   {
-    skill: 'Java',
+    name: 'Java',
     prof: 50,
     comments: '',
   },
   {
-    skill: 'C#',
+    name: 'C#',
     prof: 50,
     comments: 'Used heavily at Hitachi Consulting for Xamarin',
   },
   {
-    skill: 'Redux',
+    name: 'Redux',
     prof: 25,
     comments: "I'm actively learning this one.",
   },
@@ -48,9 +48,9 @@ export default class Skills extends Component {
       .reverse()
       .map(skill => {
         return (
-          <Fragment>
+          <Fragment key={skill.name}>
             <tr>
-              <td>{skill.skill}</td>
+              <td>{skill.name}</td>
               <td>
                 <Progress value={skill.prof} color={prof_map[skill.prof]} />
               </td>

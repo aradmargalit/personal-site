@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './BasicInfo.css';
 import arad_image from './arado.png';
+import SocialTray from '../SocialTray/SocialTray';
 
 class BasicInfo extends Component {
   render() {
@@ -21,6 +22,7 @@ class BasicInfo extends Component {
               <h5>Software Developer at Hulu</h5>
               <h5>Hiking, Biking, Swimming, Running, and Coding</h5>
             </div>
+            <SocialTray />
           </Col>
         </Row>
       </Container>
