@@ -19,3 +19,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# don't check in json with copy
+/src/components/About/about.json
+/src/components/Resume/experience.json
