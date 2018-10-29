@@ -13,8 +13,13 @@ export default class About extends Component {
   }
 
   shuffleFact = () => {
-    console.log('Shuffling');
-    this.setState({ fact: _.sample(about.fun_facts) });
+    //Don't pick the same fact twice in a row
+    let currentFact = this.state.fact;
+    let newFact = currentFact;
+    while (newFact === currentFact) {
+      newFact = _.sample(about.fun_facts);
+    }
+    this.setState({ fact: newFact });
   };
 
   render() {
