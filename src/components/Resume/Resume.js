@@ -49,9 +49,6 @@ export default class Resume extends Component {
 
   render() {
     return (
-      <Row>
-        <Col xs={{ size: 8, offset: 2 }}>
-          <br />
           <ListGroup className="resume">
             <ListGroupItem>
               <h3>Experience</h3> <br />
@@ -62,9 +59,6 @@ export default class Resume extends Component {
               <Skills />
             </ListGroupItem>
           </ListGroup>
-          <br />
-        </Col>
-      </Row>
     );
   }
 }
