@@ -41,7 +41,9 @@ class MenuBar extends Component {
                 </LinkContainer>
               </NavItem>
               <NavItem>
-                <NavLink href="/resume/">Resume</NavLink>
+                <LinkContainer to="/resume">
+                  <NavLink>Resume</NavLink>
+                </LinkContainer>
               </NavItem>
               <NavItem>
                 <NavLink
