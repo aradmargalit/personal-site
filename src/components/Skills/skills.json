@@ -1,0 +1,71 @@
+{
+  "languages": [
+    {
+      "name": "Python",
+      "uses": ["ETL systems", "Data pipelines", "Data analysis scripts"]
+    },
+    {
+      "name": "Ruby",
+      "uses": ["Ruby on Rails", "Web Application Development"]
+    },
+    {
+      "name": "Go",
+      "uses": [
+        "Highly performant API development using Goa Design",
+        "RESTful API development to support internal tooling"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "uses": [
+        "Creating user-friendly websites and applications",
+        "Running NodeJS servers"
+      ]
+    },
+    {
+      "name": "C#",
+      "uses": ["Creating mobile applications using the Xamarin framework"]
+    }
+  ],
+  "tools": [
+    {
+      "name": "AWS",
+      "uses": [
+        "Deploying application infrastructure to the cloud",
+        "ECS, S3, Dynamo, Elasticache, EC2, RDS, and more"
+      ]
+    },
+    {
+      "name": "Kafka",
+      "uses": [
+        "Building robust data pipelines with built-in redundancy and data recovery",
+        "Distributed data consumption for real-time messaging"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "uses": [
+        "Backend datastore for a Ruby on Rails Monolith",
+        "Debugging, troubleshooting, and building ad-hoc reports as needed"
+      ]
+    },
+    {
+      "name": "NGINX",
+      "uses": ["Reverse proxy to host static assets"]
+    },
+    {
+      "name": "React",
+      "uses": [
+        "Making this site!",
+        "Building enterprise-grade internal tools for Ad Operations users"
+      ]
+    },
+    {
+      "name": "Terraform",
+      "uses": [
+        "Writing provider-agnostic infratructure-as-code definitions for our applications' stacks",
+        "Providing auditability for all changes to cloud infrastructure"
+      ]
+    }
+  ]
+}
