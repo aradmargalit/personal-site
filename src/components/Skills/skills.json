@@ -2,29 +2,34 @@
   "languages": [
     {
       "name": "Python",
-      "uses": ["ETL systems", "Data pipelines", "Data analysis scripts"]
+      "uses": ["ETL systems", "Data pipelines", "Data analysis scripts"],
+      "iconClassname": "devicon-python-plain colored"
     },
     {
       "name": "Ruby",
-      "uses": ["Ruby on Rails", "Web Application Development"]
+      "uses": ["Ruby on Rails", "Web Application Development"],
+      "iconClassname": "devicon-ruby-plain colored"
     },
     {
       "name": "Go",
       "uses": [
         "Highly performant API development using Goa Design",
         "RESTful API development to support internal tooling"
-      ]
+      ],
+      "iconClassname": "devicon-go-plain colored"
     },
     {
       "name": "Javascript",
       "uses": [
         "Creating user-friendly websites and applications",
         "Running NodeJS servers"
-      ]
+      ],
+      "iconClassname": "devicon-javascript-plain colored"
     },
     {
       "name": "C#",
-      "uses": ["Creating mobile applications using the Xamarin framework"]
+      "uses": ["Creating mobile applications using the Xamarin framework"],
+      "iconClassname": "devicon-csharp-plain colored"
     }
   ],
   "tools": [
@@ -33,39 +38,53 @@
       "uses": [
         "Deploying application infrastructure to the cloud",
         "ECS, S3, Dynamo, Elasticache, EC2, RDS, and more"
-      ]
-    },
-    {
-      "name": "Kafka",
-      "uses": [
-        "Building robust data pipelines with built-in redundancy and data recovery",
-        "Distributed data consumption for real-time messaging"
-      ]
+      ],
+      "iconClassname": "devicon-amazonwebservices-plain colored"
     },
     {
       "name": "MySQL",
       "uses": [
         "Backend datastore for a Ruby on Rails Monolith",
         "Debugging, troubleshooting, and building ad-hoc reports as needed"
-      ]
+      ],
+      "iconClassname": "devicon-mysql-plain colored"
     },
     {
       "name": "NGINX",
-      "uses": ["Reverse proxy to host static assets"]
+      "uses": ["Reverse proxy to host static assets"],
+      "iconClassname": "devicon-nginx-plain colored"
     },
     {
       "name": "React",
       "uses": [
         "Making this site!",
         "Building enterprise-grade internal tools for Ad Operations users"
-      ]
+      ],
+      "iconClassname": "devicon-react-plain colored"
+    },
+    {
+      "name": "Docker",
+      "uses": [
+        "Enabling rapid setup and development for both new and legacy projects",
+        "Deploying containerized services into AWS envrionments, managed by ECS."
+      ],
+      "iconClassname": "devicon-docker-plain colored"
     },
     {
       "name": "Terraform",
       "uses": [
         "Writing provider-agnostic infratructure-as-code definitions for our applications' stacks",
         "Providing auditability for all changes to cloud infrastructure"
-      ]
+      ],
+      "iconClassname": "devicon-terraform-plain colored"
+    },
+    {
+      "name": "Kafka",
+      "uses": [
+        "Building robust data pipelines with built-in redundancy and data recovery",
+        "Distributed data consumption for real-time messaging"
+      ],
+      "iconClassname": "devicon-kafka-plain colored"
     }
   ]
 }

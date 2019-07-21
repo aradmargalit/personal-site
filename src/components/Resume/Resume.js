@@ -49,16 +49,18 @@ export default class Resume extends Component {
 
   render() {
     return (
-          <ListGroup className="resume">
-            <ListGroupItem>
-              <h3>Experience</h3> <br />
-              {this.renderExperience()}
-            </ListGroupItem>
-            <ListGroupItem>
-              <h3>Skills</h3> <br />
-              <Skills />
-            </ListGroupItem>
-          </ListGroup>
+      <ListGroup className="resume">
+        <ListGroupItem className="experience">
+          <h3 style={{ paddingBottom: '15px' }}>Experience</h3>
+          <hr></hr>
+          {this.renderExperience()}
+        </ListGroupItem>
+        <ListGroupItem className="skills">
+          <h3 style={{ paddingBottom: '15px' }}>Skills</h3>
+          <hr></hr>
+          <Skills />
+        </ListGroupItem>
+      </ListGroup>
     );
   }
 }

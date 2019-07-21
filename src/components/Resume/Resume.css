@@ -1,5 +1,15 @@
 .resume {
   text-align: left;
+  width: 80%;
+  margin: auto;
+}
+
+.experience {
+  border: none !important;
+}
+
+.skills {
+  border: none !important;
 }
 
 .start_end {
