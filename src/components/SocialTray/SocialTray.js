@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import {
   TiSocialLinkedinCircular,
   TiSocialGithubCircular,
@@ -8,7 +8,7 @@ import './SocialTray.css';
 export default class SocialTray extends Component {
   render() {
     return (
-      <Fragment>
+      <div>
         <a
           href="https://www.linkedin.com/in/arad-margalit-6a0271a6"
           target="_blank"
@@ -23,7 +23,7 @@ export default class SocialTray extends Component {
         >
           <TiSocialGithubCircular size={48} />
         </a>
-      </Fragment>
+      </div>
     );
   }
 }

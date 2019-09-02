@@ -9,7 +9,7 @@ import _ from 'lodash';
 export default class About extends Component {
   constructor(props) {
     super(props);
-    this.state = { fact: _.sample(about.fun_facts) };
+    this.state = { fact: _.sample(about.funFacts) };
   }
 
   shuffleFact = () => {
@@ -17,7 +17,7 @@ export default class About extends Component {
     let currentFact = this.state.fact;
     let newFact = currentFact;
     while (newFact === currentFact) {
-      newFact = _.sample(about.fun_facts);
+      newFact = _.sample(about.funFacts);
     }
     this.setState({ fact: newFact });
   };
@@ -32,15 +32,17 @@ export default class About extends Component {
             <img src={arad_bike} alt="self portrait" />
           </Col>
           <Col xs="12" lg={{ size: 7, offset: 1 }} className="blurb float-left">
-            <p>{about.main_blurb}</p>
-            <br />
-            <strong>Random Fun Fact:</strong> {this.state.fact}
-            <br />
-            <br />
-            <Button onClick={this.shuffleFact} color="primary">
+            <p>{about.mainBlurb}</p>
+            <div style={{ height: '100px' }}>
+              <strong>Random Fun Fact:</strong> {this.state.fact}
+            </div>
+            <Button
+              className="shuffle"
+              onClick={this.shuffleFact}
+              color="primary"
+            >
               Shuffle Fun Fact
             </Button>
-            <br /> <br />
             <SocialTray />
           </Col>
         </Row>
