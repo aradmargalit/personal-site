@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import './BasicInfo.css';
-import arad_image from './smile.png';
+import smile from './smile.png';
 
 class BasicInfo extends Component {
   render() {
@@ -11,7 +11,7 @@ class BasicInfo extends Component {
         <Row className="vertical-align">
           <Col xs="12" lg="4">
             <img
-              src={arad_image}
+              src={smile}
               className="rounded-circle headshot"
               alt="Arad"
             />

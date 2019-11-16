@@ -12,20 +12,20 @@ export default class Resume extends Component {
   };
 
   renderRoles = roles => {
-    return roles.map(role => {
+    return roles.map(({name, start, end, bullets}) => {
       return (
-        <ListGroupItem key={role.name}>
+        <ListGroupItem key={name}>
           <Row>
             <Col md="8" xs="12">
-              <strong>{role.name}</strong>
+              <strong>{name}</strong>
             </Col>
             <Col md="4" xs="12" className="start_end">
-              <em>{role.start}</em> - <em>{role.end}</em>
+              <em>{start}</em> - <em>{end}</em>
             </Col>
           </Row>
           <Row>
             <Col md="9" xs="12">
-              <ul>{this.renderBullets(role.bullets)}</ul>
+              <ul>{this.renderBullets(bullets)}</ul>
             </Col>
           </Row>
         </ListGroupItem>
@@ -34,13 +34,13 @@ export default class Resume extends Component {
   };
 
   renderExperience = () => {
-    return experience.map(item => {
+    return experience.map(({company, link, roles}) => {
       return (
-        <ListGroup key={item.company}>
-          <a href={item.link} target="_blank" rel="noopener noreferrer">
-            <h5>{item.company}</h5>
+        <ListGroup key={company}>
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <h5>{company}</h5>
           </a>
-          <ul>{this.renderRoles(item.roles)}</ul>
+          <ul>{this.renderRoles(roles)}</ul>
           <br />
         </ListGroup>
       );

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, Container, Row, Col } from 'reactstrap';
 import SocialTray from '../SocialTray/SocialTray';
 import './About.css';
-import arad_bike from './arad_bike.jpg';
+import aradBike from './arad_bike.jpg';
 import about from './about.json';
 import _ from 'lodash';
 
@@ -23,16 +23,17 @@ export default class About extends Component {
   };
 
   render() {
+    const { mainBlurb } = about;
     return (
       <Container>
         <br />
         <h3>About Me</h3>
         <Row>
           <Col xs="12" lg="4">
-            <img src={arad_bike} alt="self portrait" />
+            <img src={aradBike} alt="self portrait" />
           </Col>
           <Col xs="12" lg={{ size: 7, offset: 1 }} className="blurb float-left">
-            <p>{about.mainBlurb}</p>
+            <p>{mainBlurb}</p>
             <div style={{ height: '100px' }}>
               <strong>Random Fun Fact:</strong> {this.state.fact}
             </div>

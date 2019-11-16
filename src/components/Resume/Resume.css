@@ -15,3 +15,7 @@
 .start_end {
   text-align: right;
 }
+
+.list-group > ul{
+  padding-left: 0;
+}
