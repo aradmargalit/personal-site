@@ -20,7 +20,7 @@ class BasicInfo extends Component {
             <div className="align-middle">
               <h1>Arad Margalit</h1>
               <br />
-              <h5>Software Developer at Hulu</h5>
+              <h5>Senior Software Developer at Hulu</h5>
               <h5>Hiking, Biking, Swimming, Running, and Coding</h5>
               <br />
             </div>
