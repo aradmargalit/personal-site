@@ -16,7 +16,7 @@ export default function PortfolioCard(props) {
 
   return (
     <Card className="portfolio-card">
-      <CardImg top width="100%" src={imgSource} alt="Card image cap" />
+      <CardImg top width="100%" src={imgSource} alt={buttonText} />
       <CardBody>
         <CardTitle>{title}</CardTitle>
         <CardSubtitle>{subtitle}</CardSubtitle>
