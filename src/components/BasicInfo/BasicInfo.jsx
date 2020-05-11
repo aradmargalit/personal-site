@@ -4,6 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Col, Container, Row } from 'reactstrap';
 
+import PortfolioTray from '../PortfolioTray';
 import smile from './smile.png';
 
 export default function BasicInfo() {
@@ -27,6 +28,11 @@ export default function BasicInfo() {
           <Link to="/resume">
             <Button color="secondary">Resume</Button>
           </Link>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <PortfolioTray />
         </Col>
       </Row>
     </Container>

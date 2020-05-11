@@ -1,0 +1,15 @@
+.portfolio-tray {
+  margin-top: 50px;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-subtitle {
+  font-weight: 500;
+}
+
+.card-text {
+  margin-top: 10px;
+}
