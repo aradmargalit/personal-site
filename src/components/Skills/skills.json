@@ -27,6 +27,14 @@
       "iconClassname": "devicon-javascript-plain colored"
     },
     {
+      "name": "Typescript",
+      "uses": [
+        "Building type-safe enterprise-grade applications",
+        "GraphQL server written in Typescript and using Apollo"
+      ],
+      "iconClassname": "devicon-typescript-plain colored"
+    },
+    {
       "name": "C#",
       "uses": ["Creating mobile applications using the Xamarin framework"],
       "iconClassname": "devicon-csharp-plain colored"
@@ -85,6 +93,12 @@
         "Distributed data consumption for real-time messaging"
       ],
       "iconClassname": "devicon-kafka-plain colored"
+    },
+    {
+      "name": "GraphQL",
+      "uses": [
+        "Unified data management layer for large-scale enterprise applications"
+      ]
     }
   ]
 }

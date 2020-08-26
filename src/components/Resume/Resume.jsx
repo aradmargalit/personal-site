@@ -1,10 +1,19 @@
 import './Resume.css';
 
+import moment from 'moment';
 import React from 'react';
 import { Col, ListGroup, ListGroupItem, Row } from 'reactstrap';
 
 import Skills from '../Skills';
 import experience from './experience.json';
+
+const duration = (start, end) => {
+  if (end !== 'Present') return '';
+
+  return `(${moment(start)
+    .fromNow()
+    .replace(' ago', '')})`;
+};
 
 const renderBullets = bullets => {
   return bullets.map(bullet => {
@@ -21,7 +30,7 @@ const renderRoles = roles => {
             <strong>{name}</strong>
           </Col>
           <Col md="4" xs="12" className="start_end">
-            {`${start} - ${end}`}
+            {`${start} - ${end} ${duration(start, end)}`}
           </Col>
         </Row>
         <Row>
