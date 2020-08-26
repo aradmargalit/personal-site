@@ -34,7 +34,7 @@ export default function About() {
         <Col xs="12" lg={{ size: 7, offset: 1 }} className="blurb float-left">
           <p>{mainBlurb}</p>
           <div style={{ height: '100px' }}>
-            <strong>Random Fun Fact:</strong>
+            <strong>Random Fun Fact: </strong>
             {fact}
           </div>
           <Button className="shuffle" onClick={shuffleFact} color="primary">
