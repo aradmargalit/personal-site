@@ -1,3 +1,5 @@
+This is archived, please see https://github.com/aradmargalit/portfolio instead.
+
 # Arad Margalit's Personal Site :mountain:
 
 Built with React, React Router, and Bootstrap (via [reactstrap](https://reactstrap.github.io/))
